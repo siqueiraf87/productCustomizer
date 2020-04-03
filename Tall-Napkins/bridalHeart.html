@@ -1,0 +1,726 @@
+<html lang="en">
+	<head>
+		<title>Canary & King Product Configurator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="shortcut icon" href="congrats/icons/favicon.ico">
+		<link href="congrats/icons/themify-icons/themify-icons.css" rel="stylesheet">
+		<link href="bridalHeart/css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Adamina|Aladin|Amatic+SC|Amiri|Arizonia|Berkshire+Swash|Cairo|Condiment|Cookie|Damion|EB+Garamond|Fondamento|Gloria+Hallelujah|IM+Fell+English|Indie+Flower|Josefin+Sans|Kaushan+Script|Leckerli+One|Libre+Baskerville|Mada|Merienda+One|Pacifico|Patrick+Hand|Permanent+Marker|Ramaraja|Rock+Salt&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="print.css">
+	</head>
+	<body onload="myFunction()">
+		<!--spinner loader-->
+		<div id="sk-circle" class="sk-circle">
+		  <div class="sk-circle1 sk-child"></div>
+		  <div class="sk-circle2 sk-child"></div>
+		  <div class="sk-circle3 sk-child"></div>
+		  <div class="sk-circle4 sk-child"></div>
+		  <div class="sk-circle5 sk-child"></div>
+		  <div class="sk-circle6 sk-child"></div>
+		  <div class="sk-circle7 sk-child"></div>
+		  <div class="sk-circle8 sk-child"></div>
+		  <div class="sk-circle9 sk-child"></div>
+		  <div class="sk-circle10 sk-child"></div>
+		  <div class="sk-circle11 sk-child"></div>
+		  <div class="sk-circle12 sk-child"></div>
+		</div>
+		<!--end spinner loader-->
+		<div id="catalog" class="container-fluid animate-bottom">
+			<div class="row">
+				<!--utility bar-->
+<!--				<nav class="navbar navbar-fixed-left navbar-minimal animate">
+					<div class="navbar-toggler animate">
+						<span class="menu-icon ti-plus"></span>
+					</div>
+					<ul class="navbar-menu animate">
+						<li>
+							<a id="zoomIn" class="animate">
+								<span class="ti-plus"></span>
+							</a>
+						</li>
+						<li>
+							<a id="zoomOut" class="animate">
+								<span class="ti-minus"></span>
+							</a>
+						</li>
+
+						<li>
+							<a data-toggle="tooltip" data-placement="right" title="front view" class="animate activefront">
+								<span class="ti-angle-up"></span>
+							</a>
+						</li>
+						<li>
+							<a data-toggle="tooltip" data-placement="right" title="back view" class="animate activeback">
+								<span class="ti-angle-down"></span>
+							</a>
+						</li>
+-->
+					</ul>
+				</nav>
+				<!--end utility bar-->
+				<!--left column-->
+				<!--empty view box-->
+				<div class="box-view"></div>
+				<!--front-view-->
+				<div id="desk-sx" class="front-view col-sm-12 col-md-8 tail">	
+					<img id="canvas" src="congrats/img/napkin-Cranberry.png" alt="" class="img-responsive"/>
+					<img id="logo" src="congrats/img/logo-white-bridalHeart.png"  alt="" class="img-responsive" />
+<!--					<img id="base" src="congrats/img/brand-blue.png" alt="" class="img-responsive"/>-->
+					<input type="text" class="list-group-input" placeholder="The Millers" id='list_v' />
+					<input type="text" class="list-group-input2" placeholder="JUNE 27, 2020" id='list_v2' />
+				</div>
+<!--
+				back-view
+				<div id="desk-sx-back" class="back-view col-sm-12 col-md-8 tail">	
+					<img id="canvas-back" src="congrats/img/tshirt-forrest-back.png" alt="" class="img-responsive"/>
+					<img id="base-back" src="congrats/img/background-transparent-back.png" alt="" class="img-responsive"/>
+					<img id="insert-back" src="congrats/img/logo-7-back.png"  alt="" class="img-responsive"/>					
+				</div>
+-->
+				<!--end left column-->
+				<!--right column-->
+				<div id="desk-dx" class="col-sm-12 col-md-4">
+					<div id="desk-dx-top" class="col-sm-12 catalog">
+						<div id="mySidenav-13" class="sidenav-13">
+							<div class="top-logo col-xs-12">
+								<img class="logo image-responsive" alt="" src="congrats/img/C&K-logo.png"/>
+							</div>					
+							<div onclick="closeNav13()" class="top-nav push-active col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space">Back</span>
+							</div>	
+							<div class="top-nav-name col-xs-12" data-toggle="collapse">
+								<span>Napkins</span>
+							</div>
+<!--
+							<div data-toggle="tooltip" title="Best Day Ever" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="congrats/img/product-1.png"/>
+							</div>
+-->
+							<div data-toggle="tooltip" title="Congrats" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="congrats/img/product-2.png"/>
+							</div>
+<!--
+							<div data-toggle="tooltip" title="Happy Birthday" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="congrats/img/product-3.png"/>
+							</div>
+-->
+							<div data-toggle="tooltip" title="Heart" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="congrats/img/product-4.png"/>
+							</div>
+							<div data-toggle="tooltip" title="Mr & Mrs" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="congrats/img/product-5.png"/>
+							</div>
+<!--							<div data-toggle="tooltip" title="Oh Baby" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="congrats/img/product-6.png"/>
+							</div>
+
+							<div data-toggle="tooltip" title="Black Series" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="congrats/img/product-7.jpg"/>
+							</div>
+							<div data-toggle="tooltip" title="Classic Line" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="congrats/img/product-8.jpg"/>
+							</div>
+-->
+						</div>
+						<div id="mySidenav" class="sidenav">
+							<div class="top-logo col-xs-12">
+								<img class="logo image-responsive" alt="" src="congrats/img/C&K-logo.png"/>
+							</div>
+<!--
+							<div class="top-nav col-xs-6">
+								<span>Napkins</span>
+							</div>
+
+						
+							<div class="top-nav col-xs-6">
+								<span>Configurator</span>
+							</div>
+
+							<ul class="list-group row">
+
+								<li onclick="openNav()" class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="55" class="img-responsive img-circle" alt="" src="icons/icon-6.png">
+									</span>
+									<span>Style</span>
+									<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>		
+								<li onclick="openNav3()" class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="55" class="img-responsive img-circle" alt="" src="icons/icon-2.jpg">
+									</span>
+									<span>Print</span>
+									<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>		
+
+								<li onclick="openNav5()" class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="55" class="img-responsive img-circle" alt="" src="icons/icon-3.jpg">
+									</span>
+									<span>Colors</span>
+								<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+								<li onclick="openNav19()" class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="55" class="img-responsive img-circle" alt="" src="icons/custom.png">
+									</span>
+									<span>Personalize It</span>
+								<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+							</ul>
+						</div>-->	
+
+							<ul class="list-group row">
+
+								<li class="list-group-item col-xs-12">
+									<span>&nbsp;</span>
+								</li>
+							</ul>
+							<div class="top-nav-steps col-xs-6">
+								<span>3 Easy Steps, Click Below</span>								
+							</div>
+							<div onclick="openhomeColor()" class="top-nav-name-steps col-xs-6" data-toggle="collapse">
+								<span>Step 1 > Choose Your Color</span>
+								</div>
+								<div onclick="openhomePersonalize()" class="top-nav-steps push-active col-xs-6">
+								<span>Step 2 > Make It Custom</span>
+								</div>
+								<div onclick="openhomeQuantity()" class="top-nav-name-steps col-xs-6" data-toggle="collapse">
+								<span>Step 3 > Choose Your Quantity</span>
+								</div>
+							</div>
+						<div id="mySidenav-2" class="sidenav-2">
+							<div onclick="closeNav()" class="top-nav push col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Style</span>
+							</div>
+							<div onclick="openNav7()" class="top-nav push-active col-xs-6">
+								<span>Summary</span>
+							</div>
+							<ul class="list-group row">
+								<li onclick="" class="text list-group-item col-xs-12 activex select-1" id='price5-12' data-price="5" data-code="basic napkin">
+								<span class="chat-img pull-left">
+									<img width="50" class="img-responsive img-circle" alt="" src="icons/icon-6.png"></span>Napkin
+									<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="" class="text list-group-item col-xs-12 select-1" id='price5-22' data-price="10" data-code="logo napkin">
+								<span class="chat-img pull-left">
+									<img width="50" class="img-responsive img-circle" alt="" src="icons/icon-9.png"></span>Logo Napkin
+									<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+							</ul>
+						</div>
+						<div id="mySidenav-3" class="sidenav-3">
+							<div onclick="closeQuantity()" class="top-nav push col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Back To Step 2</span>
+							</div>
+							<div onclick="openNav7()" class="top-nav push-active col-xs-6">
+								<span>Review Your Order</span>
+							</div>
+							<ul class="list-group row">
+
+								<li class="list-group-item col-xs-12">
+									<span>&nbsp;</span>
+								</li>
+							</ul>
+							<div class="top-nav col-xs-6">
+								<span>Comes in packs of 50</span>								
+							</div>
+							<button class="top-nav-qty col-xs-2 push-counter quantity-left-minus btn btn-number" type="button" data-type="minus">
+								<span class="ti-minus"></span>
+							</button>
+							<div class="top-nav-qty col-xs-2">
+								<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
+							</div>
+							<button class="top-nav-qty col-xs-2 push-counter quantity-right-plus btn btn-number" type="button" data-type="plus">
+								<span class="ti-plus"></span>
+							</button>
+							<a href="https://canaryandking.com/cart.php?action=buy&product_id=588&source=PZ"><div class="top-nav-steps-qty col-xs-6 push-box" id='num_item_basket'>
+								<span class="ti-package"></span><span class="tab-space"></span>
+								<span>add to cart</span>
+						</div></a>
+						</div>
+						<div id="mySidenav-4" class="sidenav-4">         
+							<div onclick="closeNav4()" class="top-nav push col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Colors</span>
+							</div>
+							<div onclick="openNav7()" class="top-nav push-active col-xs-6">
+								<span>Summary</span>
+							</div>
+							<ul class="list-group row">
+								<li onclick="openNav5()" class="text list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+									<img width="50" class="img-responsive img-circle" alt="" src="icons/icon-5.png"></span>Napkin Color
+									<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+<!--
+								<li id="color-minimal-brand" onclick="openNav6()" class="text list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+									<img width="50" class="img-responsive img-circle" alt="" src="icons/icon-8.jpg"></span>Brand
+									<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+-->
+<!--
+								<li id="color-background-print" onclick="openNav15()" class="text list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+									<img width="50" class="img-responsive img-circle" alt="" src="icons/icon-9.jpg"></span>Background Print
+									<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+
+								<li id="color-insert" onclick="openNav12()" class="text list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+									<img width="50" class="img-responsive img-circle" alt="" src="icons/icon-9.png"></span>Logo
+									<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li> -->					
+							</ul>
+						</div>
+						<div id="mySidenav-5" class="sidenav-5">
+							<div onclick="closeColor()" class="top-nav col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Back</span>
+							</div>
+							<div onclick="openPersonalize()" class="top-nav push-active col-xs-6">
+								<span>Next Step</span><span class="tab-space"></span><span class="ti-angle-right"></span>
+							</div>
+							<ul class="list-group row">
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Silver.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 activex select-3"  id='price1-1' data-price="55" data-code="Silver">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Silver.png"></span>
+									Silver<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Gold.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-2' data-price="55" data-code="Gold">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Gold.png"></span>
+									Gold<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-White.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-3' data-price="55" data-code="White">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-White.png"></span>
+									White<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Ivory.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-4' data-price="55" data-code="Ivory">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Ivory.png"></span>
+									Ivory<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Black.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-5' data-price="55" data-code="Black">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Black.png"></span>
+									Black<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Aubergine.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-6' data-price="55" data-code="Aubergine">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Aubergine.png"></span>
+									Aubergine<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Hunter-Green.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-7' data-price="55" data-code="very violet">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Hunter-Green.png"></span>
+									Hunter Green<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Navy.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-8' data-price="55" data-code="Hunter Green">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Navy.png"></span>
+									Navy<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>				
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Cranberry.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-9' data-price="55" data-code="Cranberry">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Cranberry.png"></span>
+									Cranberry<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>	
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Red.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-10' data-price="55" data-code="Red">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Red.png"></span>
+									Red<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>	
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Orange.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-11' data-price="55" data-code="Orange">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Orange.png"></span>
+									Orange<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>				
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Fuchsia.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-12' data-price="55" data-code="Pink">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Fuchsia.png"></span>
+									Pink<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>	
+								<li onclick="document.getElementById('canvas').src='congrats/img/napkin-Moss-Green.png', document.getElementById('insert').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 select-3" id='price1-13' data-price="55" data-code="Moss Green">
+									<span class="chat-img pull-left"><img class="img-circle img-responsive" width="50" alt="" src="congrats/img/napkin-Moss-Green.png"></span>
+									Moss Green<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>								
+							</ul>
+						</div>
+						<div id="mySidenav-6" class="sidenav-6">
+							<div onclick="closeNav6()" class="top-nav push col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Minimal Brand</span>
+							</div>
+							<div onclick="openNav7()" class="top-nav push-active col-xs-6">
+								<span>Summary</span>
+							</div>
+							<ul class="list-group row">
+								<li onclick="document.getElementById('base').src='congrats/img/brand-blue.png', document.getElementById('base-back').src='congrats/img/background-transparent-back.png'" class="text list-group-item col-xs-12 activex select-4" id='price2-1' data-price="5" data-code="brand blue">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-brand-blue.jpg">
+									</span>
+									blue<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='congrats/img/brand-red.png', document.getElementById('base-back').src='congrats/img/background-transparent-back.png'" class="text list-group-item col-xs-12 select-4" id='price2-2' data-price="5" data-code="brand red">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-brand-red.jpg">
+									</span>
+									red<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='congrats/img/brand-green.png', document.getElementById('base-back').src='congrats/img/background-transparent-back.png'" class="text list-group-item col-xs-12 select-4" id='price2-3' data-price="5" data-code="brand green">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-brand-green.jpg">
+									</span>
+									green<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='congrats/img/brand-violet.png', document.getElementById('base-back').src='congrats/img/background-transparent-back.png'" class="text list-group-item col-xs-12 select-4" id='price2-4' data-price="5" data-code="brand violet">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-brand-violet.jpg">
+									</span>
+									violet<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+							</ul>
+						</div>
+						<div id="mySidenav-15" class="sidenav-15">
+							<div onclick="closeNav15()" class="top-nav push col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Background Print</span>
+							</div>
+							<div onclick="openNav7()" class="top-nav push-active col-xs-6">
+								<span>Summary</span>
+							</div>
+							<ul class="list-group row">
+								<li onclick="document.getElementById('base').src='congrats/img/background-1.png', document.getElementById('base-back').src='congrats/img/background-1-back.png'" class="text list-group-item col-xs-12 activex select-5" id='price4-10' data-price="10" data-code="citylife">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-citylife.jpg">
+									</span>
+									citylife
+									<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='congrats/img/background-4.png', document.getElementById('base-back').src='congrats/img/background-4-back.png'" class="text list-group-item col-xs-12 select-5" id='price4-20' data-price="8" data-code="universe">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-universe.jpg">
+									</span>
+									universe
+									<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='congrats/img/background-2.png', document.getElementById('base-back').src='congrats/img/background-2-back.png'" class="text list-group-item col-xs-12 select-5" id='price4-30' data-price="8" data-code="forrest">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-forrest.jpg">
+									</span>
+									forrest
+									<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='congrats/img/background-3.png', document.getElementById('base-back').src='congrats/img/background-3-back.png'" class="text list-group-item col-xs-12 select-5" id='price4-40' data-price="8" data-code="vintage">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-vintage.jpg">
+									</span>
+									vintage
+									<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+							</ul>
+						</div>
+						<div id="mySidenav-12" class="sidenav-12">
+							<div onclick="closeNav12()" class="top-nav push col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Logo</span>
+							</div>
+							<div onclick="openNav7()" class="top-nav push-active col-xs-6">
+								<span>Summary</span>
+							</div>
+							<ul class="list-group row">
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-bestDayEver.png', document.getElementById('insert-back').src='congrats/img/logo-bestDayEver.png'" class="text list-group-item col-xs-12 select-6" id='price3-1' data-price="5" data-code="Best Day Ever">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-1.png">
+									</span>
+									Best Day Ever<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-Congrats.png', document.getElementById('insert-back').src='congrats/img/logo-Congrats.png'" class="text list-group-item col-xs-12 activex select-6" id='price3-2' data-price="8" data-code="Congrats">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-2.png">
+									</span>
+									Congrats<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-HappyBirthday.png', document.getElementById('insert-back').src='congrats/img/logo-HappyBirthday.png'" class="text list-group-item col-xs-12 select-6" id='price3-3' data-price="5" data-code="Happy Birthday">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-3.png">
+									</span>
+									Happy Birthday<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-Heart.png', document.getElementById('insert-back').src='congrats/img/logo-Heart.png'" class="text list-group-item col-xs-12 select-6" id='price3-4' data-price="7" data-code="Heart">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-4.png">
+									</span>
+									Heart<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-Mr&Mrs.png', document.getElementById('insert-back').src='congrats/img/logo-Mr&Mrs.png'" class="text list-group-item col-xs-12 select-6" id='price3-5' data-price="6" data-code="Mr & Mrs">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-5.png">
+									</span>
+									Mr & Mrs<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-OhBaby.png', document.getElementById('insert-back').src='congrats/img/logo-OhBaby.png'" class="text list-group-item col-xs-12 select-6" id='price3-6' data-price="5" data-code="Oh Baby">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-6.png">
+									</span>
+									Oh Baby<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+<!--
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-6.png', document.getElementById('insert-back').src='congrats/img/logo-6-back.png'" class="text list-group-item col-xs-12 select-6" id='price3-7' data-price="20" data-code="john monroe">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-6.jpg">
+									</span>
+									john monroe<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-8.png', document.getElementById('insert-back').src='congrats/img/logo-8-back.png'" class="text list-group-item col-xs-12 select-6" id='price3-8' data-price="30" data-code="bronx vintage">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-8.jpg">
+									</span>
+									bronx vintage<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="document.getElementById('insert').src='congrats/img/logo-9.png', document.getElementById('insert-back').src='congrats/img/logo-9-back.png'" class="text list-group-item col-xs-12 select-6" id='price3-9' data-price="25" data-code="popeye sailing">
+									<span class="chat-img pull-left">
+										<img class="img-circle img-responsive" width="50" alt="" src="congrats/img/select-logo-9.jpg">
+									</span>
+									popeye sailing<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+-->
+							</ul>
+						</div>
+						
+						<div id="mySidenav-19" class="sidenav-19">
+							<div onclick="closePersonalize()" class="top-nav push col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Previous Step</span>
+							</div>
+							<div onclick="openQuantity()" class="top-nav push-active col-xs-6">
+								<span>Next Step</span><span class="tab-space"></span><span class="ti-angle-right"></span>
+							</div>
+							<div><ul class="list-group row size">
+<!--								<li onclick="document.getElementById('add').value=fname, document.getElementById('base-back').src='congrats/img/background-transparent-back.png'" class="text list-group-item col-xs-12 activex select-4" id='price2-1' data-price="5" data-code="brand blue">-->
+									<li class="list-group-item col-xs-12"> <span class="chat-img pull-left">
+									<span>Line 1: </span><input type="text" class="list-input-val" id='list_val' placeholder="Felipe & Marissa" style="text-decoration-color: #98A4AE"/></span>
+									</li><br>
+									<li class="list-group-item col-xs-12"> <span class="chat-img pull-left">
+									<span>Line 2: </span><input type="text" class="list-input-val" id='list_val2' placeholder="June 18, 2020" style="text-decoration-color: #98A4AE"/></span>
+									</li>
+									<li class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">Font:</span>
+									</li>
+									<li class="list-group-item col-xs-12">
+										<span class="chat-img pull-left">
+											<select id="input-font" class="input"  onchange="changeFont (this);">
+												<option value="Adamina" style="font-family: Adamina; font-size: 18px;">Adamina</option>
+												<option value="Aladin" style="font-family: Aladin; font-size: 18px;">Aladin</option>
+												<option value="Amatic SC" style="font-family: Amatic SC; font-size: 18px;">Amatic SC</option>
+												<option value="Amiri" style="font-family: Amiri; font-size: 18px;">Amiri</option>
+												<option value="Arial" style="font-family: Arial; font-size: 18px;">Arial</option>
+												<option value="Arizonia" style="font-family: Arizonia ; font-size: 18px;">Arizonia</option>
+												<option value="Berkshire Swash" style="font-family: Berkshire Swash; font-size: 18px;">Berkshire Swash</option>
+												<option value="Condiment" style="font-family: Condiment ; font-size: 18px;">Condiment</option>
+												<option value="Cookie" style="font-family: Cookie ; font-size: 18px;">Cookie</option>
+												<option value="Damion" style="font-family: Damion ; font-size: 18px;">Damion</option>
+												<option value="EB Garamond" style="font-family: EB Garamond ; font-size: 18px;">EB Garamond</option>
+												<option value="Fondamento" style="font-family: Fondamento ; font-size: 18px;">Fondamento</option>
+												<option value="Gloria Hallelujah" style="font-family: Gloria Hallelujah ; font-size: 18px;">Gloria Hallelujah</option>
+												<option value="Indie Flower" style="font-family: Indie Flower ; font-size: 18px;">Indie Flower</option>
+											  	<option value="josefin-sans" style="font-family: 'josefin-sans'; font-size: 18px;" selected ="selected">Josefin Sans</option>
+												<option value="Kaushan Script" style="font-family: Kaushan Script ; font-size: 18px;">Kaushan Script</option>
+												<option value="Leckerli One" style="font-family: Leckerli One ; font-size: 18px;">Leckerli One</option>
+											  	<option value="Libre Baskerville" style="font-family: 'Libre Baskerville'; font-size: 18px;" >Libre Baskerville</option>
+												<option value="Merienda One" style="font-family: Merienda One ; font-size: 18px;">Merienda One</option>
+												<option value="Pacifico" style="font-family: Pacifico ; font-size: 18px;">Pacifico</option>
+												<option value="Patrick Hand" style="font-family: Patrick Hand ; font-size: 18px;">Patrick Hand</option>
+												<option value="Permanent Marker" style="font-family: Permanent Marker ; font-size: 18px;">Permanent Marker</option>
+												<option value="Rock Salt" style="font-family: Rock Salt ; font-size: 18px;">Rock Salt</option>
+											  	<option value="Times New Roman" style="font-family: 'Times New Roman'; font-size: 18px;">Times New Roman</option>
+											  
+											</select>
+										</span>
+									</li>
+									<li class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">Font Size:</span>
+									</li>
+									<li class="list-group-item col-xs-12">
+										<span class="chat-img pull-left">
+											<select id="input-fontSize" class="input"  onchange="changeFontSize (this);" placeholder="Font Size">
+												<option value="12" style="font-size: 18px;">12</option>
+												<option value="14" style="font-size: 18px;">14</option>
+												<option value="16" style="font-size: 18px;">16</option>
+												<option value="18" style="font-size: 18px;">18</option>
+												<option value="20" style="font-size: 18px;">20</option>
+												<option value="22" style="font-size: 18px;">22</option>
+												<option value="24" style="font-size: 18px;">24</option>
+												<option value="26" style="font-size: 18px;">26</option>
+												<option value="28" style="font-size: 18px;">28</option>
+												<option value="30" style="font-size: 18px;">30</option>
+											  
+											</select>
+										</span>
+									</li>
+									<li class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">Choose Your Font Color:</span>
+									</li>
+									<li class="list-group-item col-xs-12">
+										<span class="chat-img pull-left">
+											<img id='price4-1' data-code='black font' onclick="changeBlack()" class="chat-img pull-left select-6" width="50" alt="" src="congrats/icons/Black-Swatch.jpg">
+											<img id='price4-2' data-code='white font' onclick="changeWhite()" class="chat-img pull-left select-6" width="50" alt="" src="congrats/icons/White-Swatch.jpg">
+											<img id='price4-3' data-code='silver font' onclick="changeSilver()" class="chat-img pull-left select-6" width="50" alt="" src="congrats/icons/Silver-Swatch.jpg">
+											<img id='price4-4' data-code='red font' onclick="changeRed()" class="chat-img pull-left select-6" width="50" alt="" src="congrats/icons/Red-Swatch.jpg">
+											<img id='price4-5' data-code='gold font' onclick="changeGold()" class="chat-img pull-left select-6" width="50" alt="" src="congrats/icons/Gold-Swatch.jpg">
+										</span>
+									</li>
+									</li>
+								
+								<!--
+								<li onclick="" class="text list-group-item col-xs-12 activex select-7" id='price6-1' data-code="XS">
+									extra small<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="" class="text list-group-item col-xs-12 select-7" id='price6-2' data-code="S">
+									small<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="" class="text list-group-item col-xs-12 select-7" id='price6-3' data-code="M">
+									medium<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="" class="text list-group-item col-xs-12 select-7" id='price6-4' data-code="L">
+									large<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="" class="text list-group-item col-xs-12 select-7" id='price6-5' data-code="XL">
+									extra large<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+								<li onclick="" class="text list-group-item col-xs-12 select-7" id='price6-6' data-code="XXL">
+									extra extra large<span class="tab-space"></span><span class="ti-plus"></span>
+								</li>
+-->
+							</ul>
+							</div>
+						</div>
+						<div id="mySidenav-7" class="sidenav-7">
+							<div onclick="closeNav7()" class="top-nav push-active col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>Back</span>
+							</div>
+							<div class="top-nav col-xs-6">
+								<span>Cart</span>
+							</div>
+							<ul class="list-group row">								
+<!--							<li onclick="closeNav9()" class=" list-group-summary col-xs-8">
+									<span class="chat-img pull-left">
+										<span class="ti-pencil"></span><span class="tab-space"></span>
+									</span>
+										Print:<br>
+									<span class="list-group-code" id="code_1"></span>
+								</li>
+								<li onclick="closeNav9()" class=" list-group-item col-xs-4">
+									<p id='total_1'>0.00 $</p>
+								</li>
+-->
+								<li onclick="closeNav10()" class=" list-group-summary col-xs-8">
+									<span class="chat-img pull-left">
+										<span class="ti-pencil"></span><span class="tab-space"></span>
+									</span>
+										Napkin Color:<br>
+									<span class="list-group-code" id="code_3"></span>
+								</li>
+								<li onclick="closeNav10()" class=" list-group-item col-xs-4">
+									<p id='total'>$ 0.00</p>
+								</li>
+<!--
+								<li onclick="closeNav11()" class="summary-minimal-brand list-group-summary col-xs-8">
+									<span class="chat-img pull-left">
+										<span class="ti-pencil"></span><span class="tab-space"></span>
+									</span>
+										Brand Color:<br>
+									<span class="list-group-code" id="code_2"></span>	
+								</li>
+								<li onclick="closeNav11()" class="summary-minimal-brand list-group-item col-xs-4">
+									<p id='total_2'>0.00 $</p>
+								</li>
+								<li onclick="closeNav16()" class="background-print list-group-summary col-xs-8">
+									<span class="chat-img pull-left">
+										<span class="ti-pencil"></span><span class="tab-space"></span>
+									</span>
+										Print:<br>
+									<span class="list-group-code" id="code_5"></span>	
+								</li>
+								<li onclick="closeNav16()" class="background-print list-group-item col-xs-4">
+									<p id='total_4'>0.00 $</p>
+								</li>
+
+								<li onclick="closeNav14()" class="summary-insert list-group-summary col-xs-8">
+									<span class="chat-img pull-left">
+										<span class="ti-pencil"></span><span class="tab-space"></span>
+									</span>
+										Occasion:<br>
+									<span class="list-group-code" id="code_4"></span>
+								</li>
+								<li onclick="closeNav14()" class="summary-insert list-group-item col-xs-4">
+									<p id='total_3'>$ 0.00</p>
+								</li>-->
+								<li onclick="closeNav20()" class=" list-group-summary col-xs-8">
+									<span class="chat-img pull-left">
+										<span class="ti-pencil"></span><span class="tab-space"></span>
+									</span>
+										Personalized:<br>
+									<span class="list-group-code" id="code_10"></span>
+								</li>
+								<li onclick="closeNav14()" class=" list-group-item col-xs-4">
+									<p id='total_4'>$ 0.00</p>
+								</li>
+								<li onclick="closeNav18()" class=" list-group-summary col-xs-8">
+									<span class="chat-img pull-left">
+										<span class="ti-pencil"></span><span class="tab-space"></span>
+									</span>
+										Font Color:<br>
+									<span class="list-group-code" id="code_5"></span>
+								</li>
+								<li onclick="closeNav18()" class=" list-group-item col-xs-4">
+									<p id='total_5'>$ 0.00</p>
+								</li>
+								<li style="line-height:35px;" class="total list-group-summary col-xs-8">
+									<span class="chat-img pull-left">
+										<span class="ti-pencil-alt"></span><span class="tab-space"></span>
+									</span>
+									Total price:<br>
+								</li>
+								<li onclick="" class="total list-group-item col-xs-4">
+									<span class="pull-left" style="padding-left: 5px;"></span><p id="count_tot" >0.00</p>
+								</li>
+							</ul>
+							<div class="top-nav col-xs-6">
+								<span>Comes in packs of 50</span>								
+							</div>
+							<button class="top-nav-qty col-xs-2 push-counter quantity-left-minus btn btn-number" type="button" data-type="minus">
+								<span class="ti-minus"></span>
+							</button>
+							<div class="top-nav-qty col-xs-2">
+								<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
+							</div>
+							<button class="top-nav-qty col-xs-2 push-counter quantity-right-plus btn btn-number" type="button" data-type="plus">
+								<span class="ti-plus"></span>
+							</button>
+							<div class="top-nav-steps-qty col-xs-6 push-box" id='num_item_basket'>
+								<span class="ti-package"></span><span class="tab-space"></span>
+								<span>add to cart</span>
+							</div>
+<!--
+							<div class="top-nav col-xs-6 push-active">
+								<span class="ti-sharethis"></span><span class="tab-space"></span>
+								<span>share</span>
+							</div>
+							<div class="top-nav col-xs-6 push-active">
+								<span class="ti-location-arrow"></span><span class="tab-space"></span>
+								<span>send to reseller</span>
+							</div>	
+-->
+						</div>
+					</div>					
+				</div>
+				<!--end right column-->
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="bridalHeart/js/summary.js"></script>
+		<script src="congrats/js/views.js"></script>
+		<script src="congrats/js/navigation.js"></script>
+		<script src="congrats/js/utility.js"></script>
+		<script src="congrats/node_modules/print.js"></script>
+	</body>	
+</html>
